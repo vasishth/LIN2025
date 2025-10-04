@@ -3,7 +3,7 @@ title: "Preamble: Frequentis Foundations"
 author: "Shravan Vasishth (vasishth.github.io)"
 date: "June 2025"
 output: 
-   pdf_document
+   html_document
 header-includes:
    - \usepackage{tikz}
    - \usetikzlibrary{trees}
@@ -54,7 +54,7 @@ https://github.com/bnicenboim/bayescogsci
 
 This lecture covers some basic ideas in frequentist statistics that everyone should know. These ideas are very useful as background knowledge when studying Bayesian methods.
 
-# Reminder: Maximum likelihood estimates (MLEs)
+# Reminder from chapter 1: Maximum likelihood estimates (MLEs)
 
 For the normal distribution, where $X \sim N(\mu,\sigma)$, and given $i=1,\dots, n$ independent data points, we can get MLEs of $\mu$ and $\sigma$ by computing:
 
