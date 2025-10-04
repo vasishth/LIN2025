@@ -501,7 +501,11 @@ power.t.test(n=NULL,
              strict=TRUE)
 ```
 
-Something close to 800 subjects would be needed to achieve 80% power.
+In this example, something close to 800 subjects would be needed to achieve 80% power.
+
+For more complex designs, we use simulation to compute power. See my frequentist textbook draft for more:
+
+https://vasishth.github.io/Freq_CogSci/
 
 # Type M error
 
