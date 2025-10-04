@@ -1,13 +1,13 @@
 ---
 title: "Preamble: Frequentis Foundations"
 author: "Shravan Vasishth (vasishth.github.io)"
-date: "June 2025"
+date: "October 2025"
 output: 
-   html_document
+   pdf_document
+toc: true
 header-includes:
    - \usepackage{tikz}
    - \usetikzlibrary{trees}
-toc: true
 fontsize: 12pt
 geometry: "a4paper,right=8.5cm,left=1cm,bottom=2cm,top=2cm"
 ---
@@ -478,6 +478,30 @@ polygon(c(x1, rev(x1)),
 ```
 
 
+## Computing power
+
+Power, which is calculated **before** a study is conducted, is a function of three variables:
+
+- effect size
+- standard deviation
+- sample size
+
+A quick way to get a ballpark estimate of power is by using the `power.t.test` function in R.
+
+Example: what sample size do we need in a standard within-subjects design (like the two-condition relative clause study mentioned above) to reach 80% power if the true effect size were 15 ms, with a standard deviation of 150 ms?
+
+```{r}
+power.t.test(n=NULL,
+             delta=15,
+             sd=150,
+             sig.level=0.05,
+             power=0.80,
+             alternative="two.sided",
+             type="one.sample",
+             strict=TRUE)
+```
+
+Something close to 800 subjects would be needed to achieve 80% power.
 
 # Type M error
 
