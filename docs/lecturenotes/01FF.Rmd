@@ -3,7 +3,7 @@ title: "Preamble: Frequentis Foundations"
 author: "Shravan Vasishth (vasishth.github.io)"
 date: "October 2025"
 output: 
-   pdf_document
+   html_document
 toc: true
 header-includes:
    - \usepackage{tikz}
@@ -215,8 +215,9 @@ arrows(x0,y0=cis[,1],
        x1,y1=cis[,2],length=0,lwd=cis[,3])
 ```
 
-There is a correspondence between the **correctly computed** CI and the hypothesis testing procedure (see below).
+There is a correspondence between the **correctly computed** frequentist CI and the hypothesis testing procedure (see below).
 
+Although some people use Bayesian credible intervals to carry out hypothesis tests (I have also done this), this is technically not correct because we do not automatically know the frequentist properties of the Bayesian credible interval. To carry out hypothesis tests in a Bayesian approach, Bayes factors or k-fold cross validation are needed. See the textbook chapters on model comparison for more details.
 
 ## Example of incorrectly computed CIs
 
