@@ -3,7 +3,7 @@ title: "Preamble: Frequentis Foundations"
 author: "Shravan Vasishth (vasishth.github.io)"
 date: "October 2025"
 output: 
-   html_document
+   pdf_document
 toc: true
 header-includes:
    - \usepackage{tikz}
@@ -370,6 +370,19 @@ qt(0.975,df=n-1)
 ```
 
 Their absolute values are of course identical (the distribution is symmetric when the t-distribution is centered on 0).
+
+## The p-value
+
+This is the probability of observing a t-value at least as extreme as the one you observed, **under the assumption that the null hypothesis is true**.
+
+- The p-value does not tell you anything about the specific research hypothesis; you only know how unlikely the observed t-value (or something more extreme) is, **assuming that the null is true**.
+- It does not tell you the probability of the null being true:
+$P(|t| | H_0) \neq P(H_0)$.
+- A significant p-value doesn't necessarily mean that the effect is real or reliable.
+- A non-significant p-value does not necessarily mean that the effect is absent or 0.
+- The multiple comparisons problem (below) complicates the interpretation of the p-value considerably.
+
+The only way to establish whether an effect is "real" or not is by actual replication (holds for Bayes as well).
 
 ## R syntax you should know
 
